@@ -56,7 +56,7 @@ namespace SQLiteEF_LoRa.Controllers
         [HttpGet]
         public IActionResult GetMessages()
         {
-            return Ok(_messages);
+            return Ok(_context.tbLoRaComm.ToList());            
         }
 
         // GET: api/LoRaMessage/{gatewayId}
