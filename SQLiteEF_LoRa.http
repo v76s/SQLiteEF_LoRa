@@ -1,0 +1,6 @@
+@SQLiteEF_LoRa_HostAddress = http://localhost:5187
+
+GET {{SQLiteEF_LoRa_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
