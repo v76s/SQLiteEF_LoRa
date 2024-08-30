@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using SQLiteEF_LoRa.Data;
 using SQLiteEF_LoRa.Models;
 
@@ -43,8 +43,8 @@ namespace SQLiteEF_LoRa.Controllers
             _messages.Add(message);
 
             _context.tbLoRaComm.Add(message);
-            
-            _context.SaveChanges();   
+
+            _context.SaveChanges();
 
             // Log the message (optional)
             Console.WriteLine($"Received message: {message}, saved in table.");
@@ -56,7 +56,7 @@ namespace SQLiteEF_LoRa.Controllers
         [HttpGet]
         public IActionResult GetMessages()
         {
-            return Ok(_context.tbLoRaComm.ToList());            
+            return Ok(_context.tbLoRaComm.ToList());
         }
 
         // GET: api/LoRaMessage/{gatewayId}

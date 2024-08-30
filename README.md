@@ -5,7 +5,7 @@ Simple reminder demo for SQLite + EF.
 Steps to run:
 Hit F5 in Visual Studio 
 
-Steps to reproduce from beginning:
+Steps to reproduce:
 
 - Add packages: 
   Microsoft.EntityFrameworkCore
